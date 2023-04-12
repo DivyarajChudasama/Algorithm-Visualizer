@@ -1,0 +1,2 @@
+# Algorithm-Visualizer
+ "Algorithm Visualizer" is a web development project created using HTML, CSS, and JavaScript that allows users to visualize various algorithms, including Dijkstra's algorithm, BFS, DFS, Kruskal's algorithm, and Prim's algorithm. This project provides an interactive user interface that allows users to input custom data and see the algorithm in action. The project demonstrates proficiency in HTML, CSS, and JavaScript, as well as an understanding of various algorithms and data structures.
