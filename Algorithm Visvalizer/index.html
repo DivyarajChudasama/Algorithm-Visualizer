@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>   
+    <div class="vertical-menu">
+        <b>Choose an Algorithm:</b>
+        <button class="btnMenu active" id=dfs>DFS</button>
+        <button class="btnMenu" id=bfs>BFS</button>
+        <button class="btnMenu" id=dijkstra>Dijkstra</button>
+        <button class="btnMenu" id=kruskal>Kruskal</button>
+        <button class="btnMenu" id=prim>Prim</button>
+        
+      </div>
+      <button type="button" id=reset>Reset</button>
+      <b id= terminalH>Terminal:</b>
+      <textarea name="text" id="terminal" cols="30" rows="50"></textarea>
+
+      <g id="txtLaunch">
+        <input type="text" id="textBox"  name="DC" placeholder="Choose source Vertex" pattern="[0-99]{3}-[0-99]{2}-[0-99]{3}"  required><br><br>
+        <!-- input type="tel" id="phone" name="phone<" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br> -->
+        <button type="button" id=launch>Launch</button>
+      </g>
+    <svg id="board" xmlns="http://www.w3.org/2000/svg">
+       <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+        refX="15" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+       </defs>
+    </svg>
+    <g id="directed">
+      <input type="radio" class="directed" name="graphtype" value="directed" checked>
+      <label for="directed">Directed</label><br>
+    </g>
+    <g id="undirected">
+      <input type="radio" class="undirected" name="graphtype" value="undirected">
+      <label for="undirected">Undirected</label><br>
+    </g>
+   <script type= "module" src="./simulator.js"></script> 
+</body>
+</html>
+

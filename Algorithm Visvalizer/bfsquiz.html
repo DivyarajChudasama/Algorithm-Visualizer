@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bfsquiz.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<h2>1. Breadth First Search is equivalent to which of the traversal in the Binary Trees?</h2>
+<p>a) Pre-order Traversal<br>
+    b) Post-order Traversal<br>
+    c) Level-order Traversal<br>
+    d) In-order Traversal</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">View Answer ↓</button>
+  <div id="myDropdown" class="dropdown-content">
+    <p>Answer: c<br>
+        Explanation: The Breadth First Search Algorithm searches the nodes on the basis of level. It takes a node (level 0), explores it’s neighbors (level 1) and so on.</p>
+    <!-- <a href="#about">About</a>
+    <a href="#contact">Contact</a> -->
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
